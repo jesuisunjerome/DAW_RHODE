@@ -1,0 +1,22 @@
+{
+  "name": "ProjectTwo",
+  "homepage": "https://github.com/jesuisunjerome/DAW_RHODE",
+  "authors": [
+    "jesuisunjerome <ralphpierrerhodeexy@yahoo.com>"
+  ],
+  "description": "Webpage using bootstrap",
+  "main": "index.html",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^4.1.1",
+    "fontawesome": "^5.0.13",
+    "jquery": "^3.3.1"
+  }
+}
