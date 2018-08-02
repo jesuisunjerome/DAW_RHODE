@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+  <link rel="stylesheet" href="bower_components/fontawesome/web-fonts-with-css/css/fontawesome-all.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <title>Project Store</title>
+</head>
+<body>
+  <!--Navigation-->
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top" role="navigation">
+    <div class="container-fluid">
+      <!--Para dispositivos mobiles-->
+        <a href="index.html" class="navbar-brand"><h3>Project Store</h3></a>
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#barraNavegacion">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      <!--Fin mobiles-->
+      <!--Enlaces de la barra de navegacion-->
+        <div class="collapse navbar-collapse" id="barraNavegacion">
+          <ul class="navbar-nav">
+            <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+            <li class="nav-item dropdown">
+              <a href="#" class="nav-link dropdown-toggle" id="subMenuShop" data-toggle="dropdown">Shop</a>
+              <div class="dropdown-menu" area-labelledby="#subMenuShop">
+                <a href="shop.html" class="dropdown-item">All</a>
+                <div class="dropdown-divider"></div>
+                <a href="shop.html#kidsCollection" class="dropdown-item">Kids's Collection</a>
+                <a href="shop.html#womenCollection" class="dropdown-item">Women's Collection</a>
+                <a href="shop.html#menCollection" class="dropdown-item">Men's Collection</a>
+              </div>
+            </li>
+            <li class="nav-item"><a href="cart.html" class="nav-link">Cart</a></li>
+            <li class="nav-item"><a href="about_us.html" class="nav-link">About Us</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Contact Us</a></li>
+          </ul>
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a href="cart.html" class="nav-link">
+                <i class="fa fa-shopping-cart">
+                  <span class="badge badge-secondary badge-pill float-right">6</span>
+                </i>
+              </a>
+            </li>
+            <li class="nav-item dropdown dropleft">
+              <a href="#" class="nav-link dropdown-toggle" id="dropdownUsuario" data-toggle="dropdown">
+                <i class="fa fa-user"></i>
+              </a>
+              <div class="dropdown-menu" area-labelledby="#dropdownUsuario">
+                <a href="#" class="dropdown-item">Account Settings</a>
+                <a href="#" class="dropdown-item">Close</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a href="#"  class="nav-link" data-toggle="modal" data-target="#miModal">Sign In</a>
+            </li>
+          </ul>
+        </div>
+      <!--Fin enlaces-->
+    </div>
+    <!--End container-fluid-->
+  </nav>
+  <!--End Navigation-->
+
+  <!--Modal-->
+  <div class="modal fade" id="miModal" role="dialog">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title">Sign In</h2>
+          <button type="button" name="button" class="close" data-dismiss="modal">
+            <span>&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form action="">
+            <h4 class="text-muted">Sign in with your email address</h4>
+            <div class="form-group">
+              <input type="email" class="form-control" id="email-add" placeholder="Enter your email" required>
+            </div>
+            <div class="form-group">
+              <input type="password" class="form-control" id="email-add" placeholder="Enter your password" required>
+            </div>
+            <div class="form-group form-check">
+              <input type="checkbox" class="form-check-input" id="miCheckBox1">
+              <label class="form-check-label" for="miCheckBox1">Remember me</label>
+            </div>
+            <button type="submit" name="button" class="btn btn-primary btn-block">Sign in</button>
+          </form>
+        </div>
+        <div class="modal-footer"></div>
+        </div>
+    </div>
+  </div>
+  <!--Fin Modal-->
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 mb-3">
+        <img src="img/Product1/21.jpg" class="img-thumbnail" alt="" width="100%" height="100%">
+        <div class="row mt-2">
+          <div class="col-3">
+            <a href="#"><img src="img/Product1/21.jpg" alt="" class="img-thumbnail"></a>
+          </div>
+          <div class="col-3">
+            <a href="#"><img src="img/Product1/21.jpg" alt="" class="img-thumbnail"></a>
+          </div>
+          <div class="col-3">
+            <a href="#"><img src="img/Product1/21.jpg" alt="" class="img-thumbnail"></a>
+          </div>
+          <div class="col-3">
+            <a href="#"><img src="img/Product1/21.jpg" alt="" class="img-thumbnail"></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <ul class="nav nav-tabs" role="tablist">
+          <li role="presentation" class="nav-item">
+            <a href="#description" class="nav-link active" aria-controls="description" role="tab" data-toggle="tab">Description</a>
+          </li>
+          <li role="presentation">
+            <a href="#features" class="nav-link" aria-controls="features" role="tab" data-toggle="tab">Features</a>
+          </li>
+          <li role="presentation">
+            <a href="#notes" class="nav-link" aria-controls=" notes" role="tab" data-toggle="tab">Notes</a>
+          </li>
+          <li role="presentation">
+            <a href="#reviews" class="nav-link" aria-controls="reviews" role="tab" data-toggle="tab">Reviews</a>
+          </li>
+        </ul>
+        <div class="tab-content">
+          <div class="tab-pane fade show active" role="tabpanel" id="description">
+            <h5>Lorem ipsum dolor.</h5>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas, nihil
+              cupiditate unde. Suscipit sed accusantium totam aspernatur. Dolorum, sit, enim.
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo nam similique
+              facilis illo sint minima consequatur eum hic alias totam. <br><br>
+            </p>
+            <form action="">
+              <div class="row">
+                <div class="col-6">
+                  <div class="form-group">
+                    <label for="number"><b>Number</b></label>
+                    <select class="form-control" id="number">
+                      <option>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                      <option>5</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="form-group">
+                    <label><b>Color</b></label>
+                    <select class="form-control" id="color">
+                      <option>Blue</option>
+                      <option>Red</option>
+                      <option>Black</option>
+                      <option>White</option>
+                      <option>Yellow</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <label><b>Size</b></label><br>
+                <div class="btn-group">
+                  <button type="button" class="btn btn-secondary" name="button">XS</button>
+                  <button type="button" class="btn btn-secondary" name="button">S</button>
+                  <button type="button" class="btn btn-secondary" name="button">M</button>
+                  <button type="button" class="btn btn-secondary" name="button">L</button>
+                  <button type="button" class="btn btn-secondary" name="button">XL</button>
+                </div>
+              </div>
+              <div class="form-group">
+                <button type="button" class="btn btn-primary" name="button">$26.99</button>
+              </div>
+              <div class="form-group">
+                <button type="submit" class="btn btn-success" name="button">Add to cart</button>
+              </div>
+            </form>
+          </div>
+          <div class="tab-pane fade" role="tabpanel" id="features">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus, laudantium!
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo voluptatibus officia
+              quasi ex voluptates architecto excepturi ullam deserunt minus corporis.
+            </p>
+          </div>
+          <div class="tab-pane fade" role="tabpanel" id="notes">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam, similique magni,
+              totam libero odio veritatis quidem!
+            </p>
+          </div>
+          <div class="tab-pane fade" role="tabpanel" id="reviews">
+            <div class="row">
+              <div class="col-md-12 mt-3">
+                <a class="btn btn-success" href="#">Leave a Review</a>
+              </div>
+            </div>
+            <hr>
+            <div class="row">
+              <div class="col-md-12">
+                <div class="ratings">
+                  <p class="float-right"><a href="#">3 days ago</a></p>
+                  <p>
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="far fa-star"></i></span>
+                    BabyCash
+                  </p>
+                  <p>From <em>Haiti</em></p>
+                  <p>It's perfect! Great product in terms of quality!!!</p>
+                </div>
+              </div>
+            </div>
+            <hr>
+            <div class="row">
+              <div class="col-md-12">
+                <div class="ratings">
+                  <p class="float-right"><a href="#">5 days ago</a></p>
+                  <p>
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="far fa-star"></i></span>
+                    Surycata
+                  </p>
+                  <p>From <em>Mexico</em></p>
+                  <p>Muy buen producto! Ya ordoné otros! :)</p>
+                </div>
+              </div>
+            </div>
+            <hr>
+            <div class="row">
+              <div class="col-md-12">
+                <div class="ratings">
+                  <p class="float-right"><a href="#">15 days ago</a></p>
+                  <p>
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="far fa-star"></i></span>
+                    Jareth
+                  </p>
+                  <p>From <em>Mexico</em></p>
+                  <p>Le queda muy bien a mi hermanito! Ya tengo ganas de comprar otra</p>
+                </div>
+              </div>
+            </div>
+            <hr>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <div class="row">
+      <div class="col-md-12">
+        <h4>Other products you may want</h4>
+        <hr>
+      </div>
+      <div class="col-md-3 col-6 mb-3">
+        <div class="card">
+          <img class="card-img-top" src="img/Product1/1.jpg" alt="Product_1">
+          <div class="card-body">
+            <h4 class="float-right">$26.99</h4>
+            <h4 class="card-title"><a href="info_product_1.html">Product</a></h4>
+            <p class="card-text text-justify">
+              This is a short description. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+            <div class="ratings">
+              <p class="float-right"><a href="#">18 reviews</a></p>
+              <p>
+              <span><i class="fas fa-star"></i></span>
+              <span><i class="fas fa-star"></i></span>
+              <span><i class="fas fa-star"></i></span>
+              <span><i class="fas fa-star"></i></span>
+              <span><i class="fas fa-star"></i></span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 col-6 mb-3">
+        <div class="card">
+          <img class="card-img-top" src="img/Product1/8.jpg" alt="Product_8">
+          <div class="card-body">
+            <h4 class="float-right">$26.99</h4>
+            <h4 class="card-title"><a href="info_product_8.html">Product</a></h4>
+            <p class="card-text text-justify">
+              This is a short description. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+            <div class="ratings">
+              <p class="float-right"><a href="#">18 reviews</a></p>
+              <p>
+                <span><i class="fas fa-star"></i></span>
+                <span><i class="fas fa-star"></i></span>
+                <span><i class="fas fa-star"></i></span>
+                <span><i class="fas fa-star"></i></span>
+                <span><i class="far fa-star"></i></span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 col-6 mb-3">
+        <div class="card">
+          <img class="card-img-top" src="img/Product1/10.jpg" alt="Product_10">
+          <div class="card-body">
+            <h4 class="float-right">$26.99</h4>
+            <h4 class="card-title"><a href="info_product_10.html">Product</a></h4>
+            <p class="card-text text-justify">
+              This is a short description. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+            <div class="ratings">
+              <p class="float-right"><a href="#">18 reviews</a></p>
+              <p>
+                <span><i class="fas fa-star"></i></span>
+                <span><i class="fas fa-star"></i></span>
+                <span><i class="fas fa-star"></i></span>
+                <span><i class="fas fa-star"></i></span>
+                <span><i class="far fa-star"></i></span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 col-6 mb-3">
+        <div class="card">
+          <img class="card-img-top" src="img/Product1/12.jpg" alt="Product_12">
+          <div class="card-body">
+            <h4 class="float-right">$26.99</h4>
+            <h4 class="card-title"><a href="info_product_12.html">Product</a></h4>
+            <p class="card-text text-justify">
+              This is a short description. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+            <div class="ratings">
+              <p class="float-right"><a href="#">18 reviews</a></p>
+              <p>
+                <span><i class="fas fa-star"></i></span>
+                <span><i class="fas fa-star"></i></span>
+                <span><i class="fas fa-star"></i></span>
+                <span><i class="fas fa-star"></i></span>
+                <span><i class="far fa-star"></i></span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </div>
+
+  <hr>
+  <!--Footer-->
+  <footer class="footer bg-light p-3">
+    <div class="container">
+      <div class="col-md-12 text-center">
+        <br>
+        <h4>GET IN TOUCH</h4><br>
+        <p class="text-muted">
+          Any questions? Let us know in store at 21, 333 Sur, Tehuacán,
+          Puebla or call us on (+52)762 106 9690
+        </p>
+        <hr>
+        <ul class="list-unstyled text-center">
+          <li class="list-inline-item"><a href="#"><i class="fab fa-twitter"></i></a></li>
+          <li class="list-inline-item"><a href="#"><i class="fab fa-facebook"></i></a></li>
+          <li class="list-inline-item"><a href="#"><i class="fab fa-linkedin"></i></a></li>
+        </ul>
+        <hr>
+         <p class="text-muted">Copyright &copy; <a href="ecommerce.html">Project Store</a> 2018</p>
+       </div>
+     </div>
+  </footer>
+  <!--Fin footer-->
+
+
+  <script src="bower_components/jquery/dist/jquery.js"></script>
+  <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+  <script src="bower_components/hammerjs/hammer.js"></script>
+</body>
+</html>
