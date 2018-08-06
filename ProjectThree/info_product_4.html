@@ -36,7 +36,7 @@
             </li>
             <li class="nav-item"><a href="cart.html" class="nav-link">Cart</a></li>
             <li class="nav-item"><a href="about_us.html" class="nav-link">About Us</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">Contact Us</a></li>
+            <li class="nav-item"><a href="#" data-toggle="modal" data-target="#modalContact" class="nav-link">Contact Us</a></li>
           </ul>
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
@@ -66,7 +66,7 @@
   </nav>
   <!--End Navigation-->
 
-  <!--Modal-->
+  <!--Modal Sign in-->
   <div class="modal fade" id="miModal" role="dialog">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
@@ -98,6 +98,108 @@
   </div>
   <!--Fin Modal-->
 
+  <!--Modal Contact Us-->
+  <div class="modal fade" id="modalContact" role="dialog">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Contact Us</h5>
+          <button class="close" data-dismiss="modal">
+            <span>&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form action="">
+            <div class="form-group">
+              <label for="contact-email" class="col-form-label">
+                Email:
+              </label>
+              <input type="email" class="form-control" id="contact-email" placeholder="Email">
+            </div>
+            <div class="form-group">
+              <label for="contact-name" class="col-form-label">
+                Name:
+              </label>
+              <input type="text" class="form-control" id="contact-name" placeholder="Name">
+            </div>
+            <div class="form-group">
+              <label for="contact-message" class="col-form-label">
+                Message:
+              </label>
+              <textarea class="form-control" id="contact-message" cols="30" rows="10" placeholder="Your message..."></textarea>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-secondary" data-dismiss="modal">
+            Close
+          </button>
+          <button class="btn btn-primary">
+            Send
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--Fin-->
+
+  <!--Modal Add to cart-->
+  <div class="modal fade" id="miModalCart" role="dialog">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title text-center">Add to cart!</h2>
+          <button type="button" name="button" class="close" data-dismiss="modal">
+            <span>&times;</span>
+          </button>
+        </div>
+        <div class="modal-body text-center">
+          <form action="">
+            <i class="fas fa-thumbs-up"></i>
+            <h5 class="text-muted">Product added to your cart</h5>
+            <br>
+            <button type="submit" name="button" class="btn btn-primary btn-block">Done</button>
+          </form>
+        </div>
+        <div class="modal-footer"></div>
+        </div>
+    </div>
+  </div>
+  <!--Fin Modal-->
+
+  <!--Modal Leave a Review-->
+  <div class="modal fade" id="modalReview" role="dialog">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Leave a review</h5>
+          <button class="close" data-dismiss="modal">
+            <span>&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form action="">
+            <div class="form-group">
+              <label for="contact-message" class="col-form-label">
+                Message:
+              </label>
+              <textarea class="form-control" id="contact-message" cols="30" rows="10" placeholder="Your message..."></textarea>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-secondary" data-dismiss="modal">
+            Close
+          </button>
+          <button class="btn btn-primary">
+            Send
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--Fin-->
+
   <div class="container">
     <div class="row">
       <div class="col-md-6 mb-3">
@@ -121,12 +223,6 @@
         <ul class="nav nav-tabs" role="tablist">
           <li role="presentation" class="nav-item">
             <a href="#description" class="nav-link active" aria-controls="description" role="tab" data-toggle="tab">Description</a>
-          </li>
-          <li role="presentation">
-            <a href="#features" class="nav-link" aria-controls="features" role="tab" data-toggle="tab">Features</a>
-          </li>
-          <li role="presentation">
-            <a href="#notes" class="nav-link" aria-controls=" notes" role="tab" data-toggle="tab">Notes</a>
           </li>
           <li role="presentation">
             <a href="#reviews" class="nav-link" aria-controls="reviews" role="tab" data-toggle="tab">Reviews</a>
@@ -182,22 +278,11 @@
                 <button type="button" class="btn btn-primary" name="button">$26.99</button>
               </div>
               <div class="form-group">
-                <button type="submit" class="btn btn-success" name="button">Add to cart</button>
+                <a href="#" data-toggle="modal" data-target="#miModalCart">
+                  <button type="submit" class="btn btn-success" name="button">Add to cart</button>
+                </a>
               </div>
             </form>
-          </div>
-          <div class="tab-pane fade" role="tabpanel" id="features">
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus, laudantium!
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo voluptatibus officia
-              quasi ex voluptates architecto excepturi ullam deserunt minus corporis.
-            </p>
-          </div>
-          <div class="tab-pane fade" role="tabpanel" id="notes">
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam, similique magni,
-              totam libero odio veritatis quidem!
-            </p>
           </div>
           <div class="tab-pane fade" role="tabpanel" id="reviews">
             <div class="row">
@@ -270,13 +355,13 @@
         <h4>Other products you may want</h4>
         <hr>
       </div>
-      <div class="col-md-3 col-6 mb-3">
+      <div class="col-md-3 col-12 mb-3">
         <div class="card">
           <img class="card-img-top" src="img/Product1/21.jpg" alt="Product_21">
           <div class="card-body">
             <h4 class="float-right">$26.99</h4>
             <h4 class="card-title"><a href="info_product_21.html">Product</a></h4>
-            <p class="card-text text-justify">
+            <p class="card-text text-justify d-none d-sm-block">
               This is a short description. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
             </p>
             <div class="ratings">
@@ -292,13 +377,13 @@
           </div>
         </div>
       </div>
-      <div class="col-md-3 col-6 mb-3">
+      <div class="col-md-3 col-12 mb-3">
         <div class="card">
           <img class="card-img-top" src="img/Product1/22.jpg" alt="Product_22">
           <div class="card-body">
             <h4 class="float-right">$26.99</h4>
             <h4 class="card-title"><a href="info_product_22.html">Product</a></h4>
-            <p class="card-text text-justify">
+            <p class="card-text text-justify d-none d-sm-block">
               This is a short description. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
             </p>
             <div class="ratings">
@@ -314,13 +399,13 @@
           </div>
         </div>
       </div>
-      <div class="col-md-3 col-6 mb-3">
+      <div class="col-md-3 col-12 mb-3">
         <div class="card">
           <img class="card-img-top" src="img/Product1/4.jpg" alt="Product_2">
           <div class="card-body">
             <h4 class="float-right">$26.99</h4>
             <h4 class="card-title"><a href="info_product_2.html">Product</a></h4>
-            <p class="card-text text-justify">
+            <p class="card-text text-justify d-none d-sm-block">
               This is a short description. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
             </p>
             <div class="ratings">
@@ -336,13 +421,13 @@
           </div>
         </div>
       </div>
-      <div class="col-md-3 col-6 mb-3">
+      <div class="col-md-3 col-12 mb-3">
         <div class="card">
           <img class="card-img-top" src="img/Product1/1.jpg" alt="Product_1">
           <div class="card-body">
             <h4 class="float-right">$26.99</h4>
             <h4 class="card-title"><a href="info_product_1.html">Product</a></h4>
-            <p class="card-text text-justify">
+            <p class="card-text text-justify d-none d-sm-block">
               This is a short description. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
             </p>
             <div class="ratings">

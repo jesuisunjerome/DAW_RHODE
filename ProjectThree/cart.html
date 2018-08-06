@@ -36,7 +36,7 @@
             </li>
             <li class="nav-item"><a href="cart.html" class="nav-link">Cart</a></li>
             <li class="nav-item"><a href="about_us.html" class="nav-link">About Us</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">Contact Us</a></li>
+            <li class="nav-item"><a href="#" data-toggle="modal" data-target="#modalContact" class="nav-link">Contact Us</a></li>
           </ul>
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
@@ -98,6 +98,51 @@
   </div>
   <!--Fin Modal-->
 
+  <!--Modal Contact Us-->
+  <div class="modal fade" id="modalContact" role="dialog">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Contact Us</h5>
+          <button class="close" data-dismiss="modal">
+            <span>&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form action="">
+            <div class="form-group">
+              <label for="contact-email" class="col-form-label">
+                Email:
+              </label>
+              <input type="email" class="form-control" id="contact-email" placeholder="Email">
+            </div>
+            <div class="form-group">
+              <label for="contact-name" class="col-form-label">
+                Name:
+              </label>
+              <input type="text" class="form-control" id="contact-name" placeholder="Name">
+            </div>
+            <div class="form-group">
+              <label for="contact-message" class="col-form-label">
+                Message:
+              </label>
+              <textarea class="form-control" id="contact-message" cols="30" rows="10" placeholder="Your message..."></textarea>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-secondary" data-dismiss="modal">
+            Close
+          </button>
+          <button class="btn btn-primary">
+            Send
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--Fin-->
+
   <div class="container">
     <div class="row">
       <div class="col-md-3 mb-5">
@@ -120,7 +165,7 @@
               <a href="info_product_1.html">Product Name</a>
             </div>
             <div class="col-md-1">1</div>
-            <div class="col-md-2">$49.99</div>
+            <div class="col-md-2">$26.99</div>
             <div class="col-md-2">
               <button class="btn btn-sm btn-default">Track</button>
             </div>
@@ -138,7 +183,7 @@
               <a href="info_product_2.html">Product Name</a>
             </div>
             <div class="col-md-1">1</div>
-            <div class="col-md-2">$49.99</div>
+            <div class="col-md-2">$26.99</div>
             <div class="col-md-2">
               <button class="btn btn-sm btn-danger">Canceled</button>
             </div>
@@ -156,7 +201,7 @@
               <a href="info_product_18.html">Product Name</a>
             </div>
             <div class="col-md-1">1</div>
-            <div class="col-md-2">$49.99</div>
+            <div class="col-md-2">$26.99</div>
             <div class="col-md-2">
               <button class="btn btn-sm btn-success">Completed</button>
             </div>
@@ -174,7 +219,7 @@
               <a href="info_product_15.html">Product Name</a>
             </div>
             <div class="col-md-1">1</div>
-            <div class="col-md-2">$49.99</div>
+            <div class="col-md-2">$26.99</div>
             <div class="col-md-2">
               <button class="btn btn-sm btn-default">Track</button>
             </div>
@@ -192,7 +237,7 @@
               <a href="info_product_12.html">Product Name</a>
             </div>
             <div class="col-md-1">1</div>
-            <div class="col-md-2">$49.99</div>
+            <div class="col-md-2">$26.99</div>
             <div class="col-md-2">
               <button class="btn btn-sm btn-danger">Canceled</button>
             </div>
@@ -210,7 +255,7 @@
               <a href="info_product_8.html">Product Name</a>
             </div>
             <div class="col-md-1">1</div>
-            <div class="col-md-2">$49.99</div>
+            <div class="col-md-2">$26.99</div>
             <div class="col-md-2">
               <button class="btn btn-sm btn-success">Completed</button>
             </div>
